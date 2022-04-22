@@ -35,7 +35,6 @@ namespace Hangman.Core.Game
       }*/
 
 
-
         public void Run()
         {
             _numberoflives = 6;
@@ -103,12 +102,12 @@ namespace Hangman.Core.Game
 
                 // Console.WriteLine( "You lose");
 
-                /*if(playerguess =  )
+               /* if(playerguess =  )
                 {
                     Console.WriteLine("You Win!!!!!!!!!!!!");
-                }
+                }*/
 
-                if (_numberoflives == 0)
+                /*if (_numberoflives == 0)
                 {
                     Console.WriteLine("You died");
                 }*/
@@ -124,6 +123,7 @@ namespace Hangman.Core.Game
             if (_numberoflives == 0)
             {
                 Console.WriteLine("You died");
+                Console.WriteLine( GuessWords);
             }
             
 
