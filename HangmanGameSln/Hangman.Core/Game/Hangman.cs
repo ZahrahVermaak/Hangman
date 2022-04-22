@@ -55,7 +55,7 @@ namespace Hangman.Core.Game
 
             _renderer.Render(5, 5, 6);
 
-            Console.SetCursorPosition(0, 13);
+            Console.SetCursorPosition(0, 15);
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.Write("Your current guess: ");
             Console.WriteLine("--------------");
@@ -63,8 +63,8 @@ namespace Hangman.Core.Game
 
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.Write("What is your next guess: ");
-            var nextGuess = Console.ReadLine();
+            //Console.Write("What is your next guess: ");
+            //var nextGuess = Console.ReadLine();
 
             for (int i = 0; i < guess.Length; i++)
             {
@@ -104,6 +104,19 @@ namespace Hangman.Core.Game
                 // Console.WriteLine( "You lose");
 
             }
+            Console.SetCursorPosition(2, 22);
+
+
+            if (_numberoflives == 0)
+            {
+                Console.WriteLine("You died");
+            }
+            else
+            {
+                Console.WriteLine($"You Win!!!!!! {_numberoflives}");
+            }
+
+            
         }
         /* for (int i = 6; i < 0; i--)
         {
