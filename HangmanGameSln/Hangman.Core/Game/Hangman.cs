@@ -103,20 +103,31 @@ namespace Hangman.Core.Game
 
                 // Console.WriteLine( "You lose");
 
+                /*if(playerguess =  )
+                {
+                    Console.WriteLine("You Win!!!!!!!!!!!!");
+                }
+
+                if (_numberoflives == 0)
+                {
+                    Console.WriteLine("You died");
+                }*/
+
+
+
             }
             Console.SetCursorPosition(2, 22);
+            
+            
 
 
             if (_numberoflives == 0)
             {
                 Console.WriteLine("You died");
             }
-            else
-            {
-                Console.WriteLine($"You Win!!!!!! {_numberoflives}");
-            }
-
             
+
+            // if mysterword is equal to your current guess then console.writeline you win
         }
         /* for (int i = 6; i < 0; i--)
         {
